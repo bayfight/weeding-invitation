@@ -8,6 +8,7 @@ body {
   font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
   min-height: 4000px;
+  right: 0;
   max-width: 100%;
 }
 
@@ -71,7 +72,7 @@ body {
 
 .mynavbar {
   background-color: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -169,7 +170,6 @@ body {
 
 .info .simply-countdown {
   color: white;
-  max-width: 100%;
 }
 
 .info .alamat {
@@ -297,15 +297,6 @@ footer a:hover {
   line-height: 0;
 }
 
-@keyframes showright {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes rotating {
   from {
     transform: rotate(0);
@@ -327,6 +318,7 @@ footer a:hover {
 @media (max-width: 992px) {
   html {
     font-size: 75%;
+    max-width: 100%;
   }
 
   .simply-countdown > .simply-section {
@@ -342,6 +334,7 @@ footer a:hover {
 @media (max-width: 768px) {
   html {
     font-size: 65%;
+    max-width: 100%;
   }
 
   .simply-countdown > .simply-section {
@@ -359,6 +352,7 @@ footer a:hover {
 @media (max-width: 576px) {
   html {
     font-size: 60%;
+    max-width: 100%;
   }
 
   .hero .title-first {
