@@ -8,6 +8,7 @@ body {
   font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
   min-height: 4000px;
+  max-width: 100%;
 }
 
 .hero::before {
@@ -15,7 +16,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  /* max-width: 100%; */
+  /* width: 100%; */
   height: 100%;
   background-image: url(img/Yunita00007.JPG);
   background-size: cover;
@@ -29,8 +32,10 @@ body {
 }
 
 .hero {
-  position: relative;
+  /* position: fixed; */
   min-height: 100vh;
+  width: 100%;
+  /* max-width: 100%; */
 }
 
 .hero h1,
@@ -68,10 +73,11 @@ body {
   background-color: rgba(255, 255, 255, 0.3) !important;
   backdrop-filter: blur(4px);
   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   z-index: 5;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+  max-width: 100%;
 }
 
 .mynavbar a {
@@ -88,11 +94,12 @@ body {
   min-height: 100vh;
   padding-top: 3rem;
   padding-bottom: 5rem;
+  max-width: 100%;
 }
 
 .home .card-img {
-  height: 50rem;
-  animation: showright 4s;
+  height: 20rem;
+  border-radius: 50%;
 }
 
 .home .card-text {
@@ -157,10 +164,12 @@ body {
   color: var(--pink);
   padding-top: 2rem;
   padding-bottom: 8rem;
+  max-width: 100%;
 }
 
 .info .simply-countdown {
   color: white;
+  max-width: 100%;
 }
 
 .info .alamat {
@@ -218,105 +227,9 @@ body {
   font-weight: 300;
 }
 
-.timeline {
-  list-style: none;
-  padding: 1.4rem 0;
-  margin-top: 1rem;
-  position: relative;
-}
-
-.timeline::before {
-  content: '';
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  width: 1px;
-  background-color: #ccc;
-  left: 50%;
-}
-
-.timeline li {
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-
-.timeline li::before,
-.timeline li::after {
-  content: '';
-  display: table;
-}
-
-.timeline li::after {
-  clear: both;
-}
-
-.timeline li .timeline-image {
-  width: 160px;
-  height: 160px;
-  background-color: #ccc;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.timeline li .timeline-panel {
-  width: 40%;
-  float: left;
-  border: 1px solid #ccc;
-  padding: 2rem;
-  position: relative;
-  border-radius: 8px;
-  background-color: #fff;
-}
-
-.timeline li .timeline-panel::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  top: 80px;
-  right: -15px;
-}
-
-.timeline li .timeline-panel::after {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  top: 81px;
-  right: -13px;
-}
-
-.timeline li.timeline-inverted .timeline-panel {
-  float: right;
-}
-
-.timeline li.timeline-inverted .timeline-panel::before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
-}
-
-.timeline li.timeline-inverted .timeline-panel::after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -13px;
-  right: auto;
-}
-
 .gallery {
   background-color: #f5f5f5;
+  max-width: 100%;
 }
 
 .rsvp {
@@ -423,35 +336,6 @@ footer a:hover {
   .home .heart {
     display: none;
   }
-
-  .timeline::before {
-    left: 60px;
-  }
-
-  .timeline li .timeline-image {
-    left: 15px;
-    margin-left: 45px;
-    top: 16px;
-  }
-
-  .timeline li .timeline-panel {
-    width: calc((100% - 200px));
-    float: right;
-  }
-
-  .timeline li .timeline-panel::before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-
-  .timeline li .timeline-panel::after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -13px;
-    right: auto;
-  }
 }
 
 /* tablet */
@@ -468,15 +352,6 @@ footer a:hover {
   .mynavbar .nav-link {
     font-size: 2rem;
     text-align: center;
-  }
-
-  .sticky-top {
-    overflow: hidden;
-  }
-
-  .timeline li .timeline-image {
-    width: 140px;
-    height: 140px;
   }
 }
 
@@ -495,7 +370,7 @@ footer a:hover {
   }
 
   .card-women {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
   footer {
@@ -508,23 +383,5 @@ footer a:hover {
   .simply-countdown > .simply-section {
     padding: 30px;
     margin: 3px;
-  }
-
-  .timeline li .timeline-image {
-    width: 80px;
-    height: 80px;
-  }
-
-  .timeline li .timeline-panel {
-    width: 65%;
-    transform: translateX(-20px);
-  }
-
-  .timeline li .timeline-panel::before {
-    top: 30px;
-  }
-
-  .timeline li .timeline-panel::after {
-    top: 31px;
   }
 }
