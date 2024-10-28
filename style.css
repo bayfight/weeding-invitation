@@ -250,7 +250,7 @@ body {
 
 .rsvp button {
   background-color: var(--pink);
-  color: rgb(100, 91, 91);
+  color: white;
   border: 1px solid var(--pink);
 }
 
