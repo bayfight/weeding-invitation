@@ -241,23 +241,23 @@ body {
 }
 
 .rsvp p {
-  color: white;
+  color: rgb(100, 91, 91);
 }
 
 .rsvp form label {
-  color: white;
+  color: rgb(100, 91, 91);
 }
 
 .rsvp button {
   background-color: var(--pink);
-  color: white;
+  color: rgb(100, 91, 91);
   border: 1px solid var(--pink);
 }
 
 .rsvp button:hover {
-  background-color: white;
+  background-color: rgb(100, 91, 91);
   color: var(--pink);
-  border: 1px solid white;
+  border: 1px solid rgb(100, 91, 91);
 }
 
 footer {
