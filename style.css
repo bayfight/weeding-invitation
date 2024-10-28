@@ -335,6 +335,7 @@ footer a:hover {
   html {
     font-size: 65%;
     max-width: 100%;
+    overflow-x: hidden !important;
   }
 
   .simply-countdown > .simply-section {
@@ -353,6 +354,7 @@ footer a:hover {
   html {
     font-size: 60%;
     max-width: 100%;
+    overflow-x: hidden !important;
   }
 
   .hero .title-first {
